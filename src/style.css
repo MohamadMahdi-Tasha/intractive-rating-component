@@ -31,3 +31,82 @@ button {
 }
 
 /*Styles*/
+body {
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.rating-component {
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--Dark-Blue);
+}
+
+.rating-component--top-side-icon {
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.rating-component--title {
+    color: var(--White);
+    font-size: 25px;
+    margin-bottom: .5rem;
+}
+
+.rating-component--paragraph {
+    color: var(--Light-Grey);
+    margin-bottom: 1.5rem;
+}
+
+.rating-component--rate-btns-holder {
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.rating-component--rate-btns-holder--btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 25%);
+    color: var(--Light-Grey);
+}
+
+.rating-component--submit-btn {
+    border-radius: 2rem;
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--White);
+    padding: 1rem;
+    letter-spacing: .5ch;
+}
+
+/*Hover And Active*/
+.rating-component--rate-btns-holder--btn:hover {
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+.rating-component--rate-btns-holder--btn:active,
+.rating-component--rate-btns-holder--btn.active{
+    background-color: var(--orange);
+    color: var(--White);
+}
+
+.rating-component--submit-btn:active {
+    background-color: var(--White);
+    color: var(--orange);
+}
