@@ -92,6 +92,37 @@ body {
     letter-spacing: .5ch;
 }
 
+/*State Page*/
+.rating-component--top-side-image {margin-bottom: 2rem;}
+.rating-component--top-side-state-btn-holder {margin-bottom: 3rem;}
+.rating-component--top-side-image,
+.rating-component--top-side-state-btn-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-component--top-side-state-btn {
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: hsl(213, 19%, 25%);
+    color: var(--orange);
+    white-space: nowrap;
+}
+
+.rating-component--title-centred {
+    color: var(--White);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.rating-component--paragraph-centred {
+    color: var(--Light-Grey);
+    text-align: center;
+}
+
 /*Hover And Active*/
 .rating-component--rate-btns-holder--btn:hover {
     background-color: var(--Medium-Grey);
@@ -108,6 +139,3 @@ body {
     background-color: var(--White);
     color: var(--orange);
 }
-
-/*Media Querys*/
-@media (max-width: 375px) {  .rating-component {width: 100%;}  }
